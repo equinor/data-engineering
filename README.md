@@ -15,11 +15,8 @@ Contributions are greatly appreciated and encouraged.
 To contribute an update simply:
 * Submit an issue describing your proposed change.
 * The repository owner will respond to your issue promptly.
-* Fork the repository, develop and test your code changes.
-* Check that any python code follows the PEP8 guidelines (line lengths up to 120 are ok) and other general conventions within this document.
-* Ensure that your code adheres to the existing style. Refer to the
-   [Google Cloud Platform Samples Style Guide](
-   https://github.com/GoogleCloudPlatform/Template/wiki/style.html) for which has been adopted.
+* Fork the repository, develop and test your changes.
+* Ensure that everything adheres to existing style and relevant guidelines.
 * Ensure that as far as possible there are unit tests covering the functionality of any new code.
 * Check that all existing unit tests still pass.
 * Edit this document if needed to describe new files or other important information.
