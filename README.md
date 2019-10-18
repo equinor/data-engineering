@@ -2,6 +2,8 @@
 
 This repository contains various resources for data engineering in Equinor.
 
+For additional information and guidelines please see the [Equinor Data Engineering Wiki](https://wiki.equinor.com/wiki/index.php/Data_engineering) (Equinor internal).
+
 ## Contents
 
 * .github/ - Custom templates for github issues and pull requests
@@ -22,4 +24,3 @@ To contribute an update simply:
 * Check that all existing unit tests still pass.
 * Edit this document if needed to describe new files or other important information.
 * Submit a pull request.
-
