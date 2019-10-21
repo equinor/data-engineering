@@ -13,11 +13,15 @@ The document should be used to understand how the system is configured and funct
 
 The {Data flow name} data flow transfers... *[brief summary of functionality]*.
 
-Type: *[​Full|Delta]*
+#### Overview
 
-Frequency: *[​​Weekly/Daily/Hourly/(higher frequency)]*
+Source Type: *[Source Type]*
 
-​Orchestration: *[​System component type]*
+Transfer Type: *[​Full|Delta]*
+
+Transfer Frequency: *[​​Weekly/Daily/Hourly/(higher frequency)]*
+
+Transfer ​Orchestration: *[​System component type]*
 
 ​Destination: *[​OMNIA component type(s)]* 
 
@@ -26,6 +30,8 @@ Frequency: *[​​Weekly/Daily/Hourly/(higher frequency)]*
 ​Security classification: *[​Open|Internal|Restricted|Confidential]*
 
 Gateway: *[System component name]*
+
+DevOps Organisation: *[DevOps Organisation name]*
 
 #### Components
 
@@ -58,6 +64,8 @@ The document and the information it contains shall be handled according to Equin
 ### Architecture overview 
 
 The main components in the system architecture are described in the table below. All components are OMNIA resources, with the exception of the *[summary of the exception(s)]*: 
+
+*[paste system diagram here]*
 
 #### *[Component Type]*
 ##### *[Feature]*
@@ -105,12 +113,6 @@ Data Catalog: *[Data Catalog Link]*
 Location: *[Cloud| On-prem]*<br/>
 Data Catalog: *[Data Catalog Link]*
 
-### Diagram
-
-The activities and data flow in the Azure Data factory (V2) pipeline is illustrated below. The diagram is copied from DataFactory Explorer (open in Google Chrome). 
-
-*[paste diagram here]*
-
 ### Interfaces and dependencies 
 
 The data flow is dependent on the following components (all OMNIA resources, except the *[exception(s>]*: 
@@ -137,7 +139,7 @@ The test environment (see component descriptions in '[Software](#software)' and 
 
 ### System configuration 
 
-Configuration, custom code and deployment scripts 
+#### Configuration, custom code and deployment scripts 
 
 Essential configuration data are included on the first page in this document. The files containing the detailed definition and configuration of the Azure components described in [Architecture Overview](#architecture-overview) are all stored in the *[Github Repository]* GitHub. This also includes deployment scripts and instructions. 
 
@@ -153,7 +155,7 @@ Essential configuration data are included on the first page in this document. Th
 
 \* Note: don't include passwords or other sensitive information here.
 
-### Security Sonfiguration 
+### Security Configuration 
 
 #### *[Component Type]*
 * *[Name or 'See [Software](#software)']* - *[Access permissions description]*
@@ -169,7 +171,7 @@ Essential configuration data are included on the first page in this document. Th
 
 Change management is incorporated in Data Lakers’ daily task management. The Data flow delivery checklist is used for quality assurance and control. The checklists documents who has been involved as developers and reviewers. 
 
-The change/release history is managed through tags in Github. 
+The change/release history is managed through releases in Github. 
 
 ### Access Management 
 
@@ -244,6 +246,24 @@ Refer to plan for OMNIA (link to be included).
 ## Service level agreements 
 
 No service level agreement (SLA) is established for this system. Refer to SLA for OMNIA (link to be included). 
+
+### Operational Responsibilities
+Incidents and Requests are handled in Services@Equinor, and using the CI named *[CI Name]* in the assignment group *[assignment group name]*.
+
+## How We Work
+
+### General Data Engineering Best Practices
+For common Data Engineering practices, see [this wiki page](https://wiki.equinor.com/wiki/index.php/Data_engineering/How_we_work).
+
+### Team Specific Practices
+
+*[Enter team specific working practices]*
+ 
+### Agile method
+
+*[Enter agile methodoligy and practices e.g.:]*
+
+*[Omniators works in 2-week iterations, with daily stand-ups every working day. Demo meetings are held after each iteration, with stakeholders and team members. Retrospective and review sessions are team internal. Backlog grooming includes team members and PO. All User Stories are estimated by team members. Tasks are organized and managed in Azure DevOps.]*
 
 ## Regulatory compliance 
 
