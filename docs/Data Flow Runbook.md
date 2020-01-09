@@ -43,6 +43,10 @@ The main components of the Data flow name data flow are:
 
 *[Any notes about the data flow design.]*
 
+#### Known Bugs & Limitations
+
+For a list of known bugs and limitations please see the issues associated with this git repository. Relevant issues should be labelled as *bug*, *enhancement* or *documentation*
+
 ### Authoring Guidelines
 
 To assist in filling out the runbook correctly, the following applies: 
