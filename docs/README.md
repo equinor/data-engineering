@@ -11,5 +11,6 @@ This folder contains documentation and templates. Some of the documents are prov
   * **Request for data transfer to OMNIA.docx** - Order form for moving data to Omnia
   * **Standard Operating Procedure.docx** - Template for Standard Operating procedures
   * **Standard Operating Procedure.docx - Solution Deployment (draft).docx** - SOP for deployment (possibly move to wiki as a standard guideline)
+* [Consumer Requirements.md](Consumer%20Requirements.md) - For collecting reqiurements from a consumer of a data share
 * [Data Flow Runbook.md](Data%20Flow%20Runbook.md) - Runbook containing solution requirements, documentation and operational information
 * [Standard Operating Procedure.md](Standard%20Operating%20Procedure.md) -Template for Standard Operating procedures
