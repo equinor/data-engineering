@@ -56,10 +56,6 @@ Level 2: Project Schedule
 
 **What fields and sources for master and reference data are available?**
 
-**Should an log of changes to the data be kept for reproducability, traceability and are there constraints in the source systems that might make this difficult?**
-
-[*Shapshots at a specific time interval v's a record of all changes that occur, even between such snapshots]*
-
 ### Backend System
 
 **Is all data needed available and where can it be found**
@@ -84,8 +80,9 @@ Level 2: Project Schedule
 
 *e.g. Create, Read, Update, Delete, GetXxx*
 
-**TODO: Lineage - and how this might impact usage**
+**Are there any considerations needed based upon the Lineage of the data?**
 
+*[Consider things like data quality issues, sources of error, delays, operational challenges and follow up of problems]*
 
 ### Data
 
@@ -103,9 +100,9 @@ Level 2: Project Schedule
 
 **Will you be aggregating the data, and if so at what level of aggregation / granularity?**
 
-**If you need to mainitaing a full audit log / historical changes, how will this be done?**
+**Do you need to maintain a full audit log / all historical changes to the data for reproducability, traceability. Are there constraints in the source systems that might make this difficult?**
 
-*Note: when copying data how to make sure multiple updates within the source system between subsequent copies are recorded.*
+[*When and how will this be done (e.g. snapshots, frequency, event based). If replicating data consider that multiple source updates between subsequent copies might not be readily available if such history is not supported by the source system.]*
 
 ### Architecture
 
