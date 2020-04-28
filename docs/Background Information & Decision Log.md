@@ -102,7 +102,7 @@ Level 2: Project Schedule
 
 **Do you need to maintain a full audit log / all historical changes to the data for reproducability, traceability. Are there constraints in the source systems that might make this difficult?**
 
-[*When and how will this be done (e.g. snapshots, frequency, event based). If replicating data consider that multiple source updates between subsequent copies might not be readily available if such history is not supported by the source system.]*
+[*When and how will this be done (e.g. snapshots / event based, frequency). If replicating data consider that multiple source updates between subsequent copies might not be readily available if such history is not supported by the source system so if needed how will you solve this?]*
 
 ### Architecture
 
@@ -127,8 +127,6 @@ e.g. copy, virtualisation, streaming, ...
 **How long is each copy operation estimated to take**
 
 **Is there a plan for any initial loading of data?**
-
-**If all changes need to be recorded and preserved, how will updates between copy operations be preserved?**
 
 ### Lifecycle
 
