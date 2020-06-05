@@ -134,6 +134,8 @@ e.g. copy, virtualisation, streaming, ...
 
 **What operational SLA is being offered?**
 
+*[e.g. Latency, Quality, Technical Support, Service Availability, Revovery Point Objective (potential for lost data in failure), Recovery Time Objective (time to restore service / data)]*
+
 **What notifications and alerting are to beimplemented if so what for?**
 
 e.g. on specific errors, non-triggered events, end-to-end, ... 
