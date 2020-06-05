@@ -62,6 +62,8 @@ The application will cache the data and wont necessarylity affect our service
 
 **Do you have any particular operational SLA requirements?**
 
+*[e.g. Latency, Quality, Technical Support, Service Availability, Revovery Point Objective (potential for lost data in failure), Recovery Time Objective (time to restore service / data)]*
+
 **Do you need any notifications or alerting and if so what for and under what conditions?**
 
 *[e.g. on specific errors, non-triggered events, end-to-end, ... ]*
