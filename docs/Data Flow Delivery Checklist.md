@@ -21,9 +21,9 @@ Update each review question as below. Where appropriate add comments, either inl
 
 Done by a peer before starting development of a new solution or major changes
 
-- [ ] Data flow name. When available, application name should be part of the name.
-- [ ] Solution design and technology used
-- [ ] Access and secret management solution
+- [ ] Data flow named correctly (When applicable, application name should be part of the name)
+- [ ] Solution design and technology are aligned with Equinor best practices & strategy  
+- [ ] Access and secret management solution used where appropriate
 - [ ] Security risk of IT components approved
 - [ ] A copy of the [Consumer Requirements.md](https://github.com/equinor/data-engineering/blob/master/docs/Consumer%20Requirements.md) has been completed for consumers
 - [ ] A copy of the [Background Information & Decision Log.md](https://github.com/equinor/data-engineering/blob/master/docs/Background%20Information%20%26%20Decision%20Log.md) has been completed
