@@ -25,8 +25,9 @@ Done by a peer before starting development of a new solution or major changes
 - [ ] Solution design and technology used
 - [ ] Access and secret management solution
 - [ ] Security risk of IT components approved
-- [ ] Legal risk of data transfer to OMNIA approved by data owner
-- [ ] Data democratization: Data available in DLS, and for data analysts and data scientists
+- [ ] A copy of the [hBackground Information & Decision Log.md](https://github.com/equinor/data-engineering/blob/master/docs/Background%20Information%20%26%20Decision%20Log.md) has been completed for consumers
+- [ ] A copy of the [hBackground Information & Decision Log.md](https://github.com/equinor/data-engineering/blob/master/docs/Background%20Information%20%26%20Decision%20Log.md) has been completed
+
 
 ## Development Review
 
