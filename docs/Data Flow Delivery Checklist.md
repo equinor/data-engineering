@@ -25,8 +25,8 @@ Done by a peer before starting development of a new solution or major changes
 - [ ] Solution design and technology used
 - [ ] Access and secret management solution
 - [ ] Security risk of IT components approved
-- [ ] A copy of the [hBackground Information & Decision Log.md](https://github.com/equinor/data-engineering/blob/master/docs/Background%20Information%20%26%20Decision%20Log.md) has been completed for consumers
-- [ ] A copy of the [hBackground Information & Decision Log.md](https://github.com/equinor/data-engineering/blob/master/docs/Background%20Information%20%26%20Decision%20Log.md) has been completed
+- [ ] A copy of the [Background Information & Decision Log.md](https://github.com/equinor/data-engineering/blob/master/docs/Background%20Information%20%26%20Decision%20Log.md) has been completed for consumers
+- [ ] A copy of the [Consumer Requirements.md](https://github.com/equinor/data-engineering/blob/master/docs/Consumer%20Requirements.md) has been completed
 
 
 ## Development Review
