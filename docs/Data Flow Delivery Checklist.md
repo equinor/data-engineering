@@ -43,7 +43,7 @@ Done by a peer developer before deployment to test environment
 - [ ] Config in DevOps release pipeline ARM templates with override parameters
 - [ ] No passwords nor service principal keys in config files
 - [ ] All artifacts (e.g. scripts for stored procedures and table definitions) in GitHub
-- [ ] No development in master branch
+- [ ] No development in master branch (consider protecting master and requiring approved PR's. then you can remove this point)
 - [ ] Runbook created
 - [ ] All config described and as either override parameters in CI/CD or defined in Runbooks
 - [ ] External dependencies documented in runbook
