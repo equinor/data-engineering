@@ -41,11 +41,11 @@ Done by a peer developer before deployment to test environment
 - [ ] No dead code (limit cruft, no dead code without justifying comment)
 - [ ] Project is split reasonably (ref. Curly’s law: Do one thing)
 - [ ] Config in DevOps release pipeline ARM templates with override parameters
-- [ ] All config as either override parameters in CI/CD or defined in Runbooks
 - [ ] No passwords nor service principal keys in config files
 - [ ] All artifacts (e.g. scripts for stored procedures and table definitions) in GitHub
 - [ ] No development in master branch
-- [ ] Runbook
+- [ ] Runbook created
+- [ ] All config described and as either override parameters in CI/CD or defined in Runbooks
 - [ ] External dependencies documented in runbook
 - [ ] readme.md on GitHub, including installation instructions
 - [ ] System diagram updated to reflect solution
