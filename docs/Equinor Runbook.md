@@ -4,10 +4,9 @@
 
 - [Operational Runbook](#operational-runbook)
   - [Introduction](#introduction)
-    - [Purpose](#purpose)
-    - [Scope](#scope)
-    - [Authoring Guidelines](#authoring-guidelines)
-    - [Legal](#legal)
+  - [Summary](#summary)
+  - [Authoring Guidelines](#authoring-guidelines)
+  - [Legal](#legal)
   - [Architecture](#architecture)
     - [Architecture overview](#architecture-overview)
     - [Hardware](#hardware)
@@ -42,28 +41,26 @@
 
 ## Introduction
 
-### Purpose
-
 This runbook provides the complete operational documentation of {System name}.
 
 The document should be used to understand how the system is configured and functions, including how to perform system administrative tasks. The primary audience for this document are personnel responsible for managing and operating the system.
 
-### Scope
+## Summary
 
 *Detailed description of what the operational runbook covers. If there are any
 limitations on the system in scope, this must be specified here.*
 
-### Authoring Guidelines
+## Authoring Guidelines
 
 To assist in filling out the runbook correctly, the following applies:
 
 - *Italicized text throughout the template is provided as background information to assist in creating the document. In the final version of the document, this text must be removed and/or replaced by system-specific information.*
 - Existing chapters or subchapters shall not be deleted. If a subchapter is considered irrelevant for the system, this must be specified in the body text of the subchapter.
-- New subchapters can be added as required. When doing so, the table of contents must be updated. 
-- Linking to SOPs and information stored in other systems is encouraged.
+- New subchapters can be added as required. When doing so, the table of contents must be updated.
+- Linking to Standard Operating Procedures (SOPs), KB articles and information stored in other systems is encouraged to avoid duplication of content across documents / multiple runbooks.  
 - No sensative or confidential information shall be entered in the runbook itself (although referenced SOPs, with appropriate access control, can contain this type of information). This limitation applies to passwords etc. that should be held in a secured key vault.
 
-### Legal
+## Legal
 
 This document contains information that is proprietary to Equinor ASA. Neither the document nor the information contained therein should be disclosed or reproduced in whole or in part, without express written consent of Equinor ASA.  
 
@@ -185,15 +182,23 @@ Equinor’s information security governance, WR1211, contains topics relevant fo
 
 *The process for making changes to the system.*
 
+e.g. *[All changes to code and configuration are tracked through github. CI/CD is used for deployment with manual approvals required for release to Production. Checklists are used to ensure quality and complience at key decision points.]*
+
 ### Access Management
 
 *Management and procedures for handling access to the system (joiners, movers
 and leavers). This description shall cover all accesses provided by IT, both
 for privileged and unprivileged users.*
 
+e.g. *[Access permissions for all Azure components except the SQL databases are managed using groups in Azure Active Directory, through the Azure portal. SQL database users and permissions are defined using SSMS.]*
+
+*[All members of XXX have administrator access to all system components in the development and test environments. Selected members have administrator access in the production environment. Other access permissions are specified in the [Security configuration](#security-configuration) section.]*
+
 ### Operational Monitoring
 
 *Monitoring of aspects related to system health and stability.*
+
+e.g. *[[Azure Log Analytics](LINK) is used for monitoring the data flow.]*
 
 ### Functional updates
 
@@ -285,6 +290,10 @@ datacenter, and this is considered sufficient.*
 ## Service level agreements
 
 *Reference to SLAs relevant to the system.*
+
+### Operational Responsibilities
+
+*e.g. Incidents and Requests are handled in Services@Equinor, and using the CI named [CI Name] in the assignment group [assignment group name].*
 
 ## Regulatory compliance
 

@@ -4,10 +4,9 @@
 
 - [Operational Runbook](#operational-runbook)
   - [Introduction](#introduction)
-    - [Purpose](#purpose)
-    - [Scope](#scope)
-    - [Authoring Guidelines](#authoring-guidelines)
-    - [Legal](#legal)
+  - [Summary](#summary)
+  - [Authoring Guidelines](#authoring-guidelines)
+  - [Legal](#legal)
   - [Architecture](#architecture)
     - [Architecture overview](#architecture-overview)
     - [Hardware](#hardware)
@@ -43,19 +42,19 @@
 
 ## Introduction
 
-### Purpose
-
 This runbook provides the complete operational documentation of the {Data flow name} data flow.
 
 The document should be used to understand how the system is configured and functions, including how to perform system administrative tasks. The primary audience for this document are personnel responsible for managing and operating the system.
 
-### Scope
+## Summary
 
-#### Functionality
+### Functionality
 
 The {Data flow name} data flow transfers... *[brief summary of functionality]*.
 
-#### Overview
+*[Any summarised notes about the functionality of the data flow.]*
+
+### Overview
 
 Source Type: *[Source Type]*
 
@@ -71,32 +70,20 @@ Transfer ​Orchestration: *[​System component type]*
 
 ​Security classification: *[​Open|Internal|Restricted|Confidential]*
 
-Gateway: *[System component name]*
-
 DevOps Organisation: *[DevOps Organisation name]*
 
-#### Components
-
-The main components of the Data flow name data flow are:
-
-- *[list the main components]*
-
-#### Design Notes
-
-*[Any notes about the data flow design.]*
-
-#### Known Bugs & Limitations
+### Known Bugs & Limitations
 
 For a list of known bugs and limitations please see the issues associated with this git repository. Relevant issues should be labelled as *bug*, *enhancement* or *documentation*
 
-### Authoring Guidelines
+## Authoring Guidelines
 
 To assist in filling out the runbook correctly, the following applies:
 
 - *Italicized text throughout the template is provided as background information to assist in creating the document. In the final version of the document, this text must be removed and/or replaced by system-specific information.*
 - Existing chapters or subchapters shall not be deleted. If a subchapter is considered irrelevant for the system, this must be specified in the body text of the subchapter.  
-- New subchapters can be added as required. When doing so, the table of contents must be updated. 
-- Linking to SOPs and information stored in other systems is encouraged.  
+- New subchapters can be added as required. When doing so, the table of contents must be updated.
+- Linking to Standard Operating Procedures (SOPs), KB articles and information stored in other systems is encouraged to avoid duplication of content across documents / multiple runbooks.  
 - No sensative or confidential information shall be entered in the runbook itself (although referenced SOPs, with appropriate access control, can contain this type of information). This limitation applies to passwords etc. that should be held in a secured key vault.
 
 ### Legal
@@ -228,39 +215,58 @@ Essential configuration data are included on the first page in this document. Th
 
 ### Change Management
 
-Change management is incorporated in Data Lakers’ daily task management. The Data flow delivery checklist is used for quality assurance and control. The checklists documents who has been involved as developers and reviewers.
+*The process for making changes to the system.*
 
-The change/release history is managed through releases in Github.
+e.g. *[All changes to code and configuration are tracked through github. CI/CD is used for deployment with manual approvals required for release to Production. Checklists are used to ensure quality and complience at key decision points.]*
 
 ### Access Management
 
-Access permissions for all Azure components except the SQL databases are managed using groups in Azure Active Directory, through the Azure portal. SQL database users and permissions are defined using SSMS.
+*Management and procedures for handling access to the system (joiners, movers
+and leavers). This description shall cover all accesses provided by IT, both
+for privileged and unprivileged users.*
 
-All members of Data Lakers have administrator access to all system components in the development and test environments. Selected members have administrator access in the production environment. Access permissions outside Data Lakers are specified in the [Security configuration](#security-configuration) section.
+e.g. *[Access permissions for all Azure components except the SQL databases are managed using groups in Azure Active Directory, through the Azure portal. SQL database users and permissions are defined using SSMS.]*
+
+*[All members of XXX have administrator access to all system components in the development and test environments. Selected members have administrator access in the production environment. Other access permissions are specified in the [Security configuration](#security-configuration) section.]*
 
 ### Operational Monitoring
 
-Azure Log Analytics and the common OMNIA transfer log API are used for monitoring the data flow.
+*Monitoring of aspects related to system health and stability.*
+
+e.g. *[[Azure Log Analytics](LINK) is used for monitoring the data flow.]*
 
 ### Functional updates
 
-The standard operating procedure (SOP) (link to be included) should be followed for deployment of functional updates in the system. Version specific deployment instructions are available in the DataLakers GitHub repository as described in the [System Configuration](#system-configuration) section.
+*Operational procedures for identifying, implementing and verifying updates to
+the system. This does not include security updates, as these are covered in
+[Security](#security).*
+
+The standard operating procedure (SOP) (link to be included) should be followed for deployment of functional updates in the system.
 
 ### Capacity management
+
+*Procedures for scaling the system according to business needs. These
+procedures should cover both up- and downscaling of the system.*
 
 Capacity configuration of the software component(s) specified in the [Software](#software) section must be discussed and clarified with the OMNIA core team.
 
 ### Backup and restore
 
+*Procedures for managing backup and restore of the system.*
+
 Refer to procedures for OMNIA (link to be included).
 
 ### Decommissioning
+
+*Procedures for decommissioning the system or parts of the system.*
 
 Refer to procedures for OMNIA (link to be included).
 
 ### Troubleshooting
 
-No specific tools or procedures are established, neither for error reporting nor management of enquiries from users.
+*All procedures related to handling of errors and faults in the system.*
+
+*[No specific tools or procedures are established, neither for error reporting nor management of enquiries from users.]*
 
 *[Or enter any procedures (actions) below – for each specific issue (case):]*
 
@@ -276,35 +282,65 @@ No specific tools or procedures are established, neither for error reporting nor
 
 ### Risk assessment
 
+*Link to the current information security risk assessment for the system.*
+
 Security risk assessment (SRA) has been done for all software components used. See [overview in OMNIA wiki](https://dataplatformwiki.azurewebsites.net/develop/componentoverview).
 
 ### Vulnerability assessment
+
+*Procedures for assessing vulnerabilities in the system. For systems managed by
+Equinor, the following standard procedure will in most cases apply:
+http://team-2.statoil.com/sites/ts-47273/_layouts/DocIdRedir.aspx?ID=be9d78d4-3704-47b4-9ee9-881b87b7feb9&HintUrl=Metodikk%2fVuln+mgmt+SOP.docx
+(Note: Bad URL?, possible replacement
+[KB0044227](https://equinor.service-now.com/selfservice?id=kb_article&sys_id=605eaf8bdbac805035e1cd4d0b961966))*
 
 Refer to Standard Operating Procedure (SOP) – Vulnerability Management.
 
 ### Security updates
 
-Refer to procedures for OMNIA (link to be included) and [KB0035618](https://equinor.service-now.com/selfservice?id=kb_article&sys_id=6a5048ba4f97e2c0bd03ce318110c7f9).
+*Procedures for identifying, implementing and verifying security updates to the
+system. These procedures shall cover both planned and unplanned (out-of-band)
+security updates.  An overview of the considerations which should be made when
+creating such a patch management program can be found in
+[KB0035618](https://equinor.service-now.com/selfservice?id=kb_article&sys_id=6a5048ba4f97e2c0bd03ce318110c7f9).*
 
 ### Security monitoring
 
-Refer to procedures for OMNIA (link to be included).
+*Description on how security monitoring is performed in the system. This
+description shall as a minimum cover which events are logged, and how relevant
+security logs are monitored and/or reviewed.  A guide to achieving compliance
+with Equinor’s logging requirements can be found in
+[KB0035619](https://statoil.service-now.com/selfservice/knowledge_detail.do?sysparm_document_key=kb_knowledge,5f90007e4f97e2c0bd03ce318110c7f3)
+(Note: Bad URL).*
 
 ### Incident handling
 
-Refer to [SF103 - Handle safety and security incident](http://aris.statoil.no/?objectguid=f9469e01-b2be-11e0-43e7-828060af7619).  
+*Description of how information security incidents are handled. For systems
+managed by Equinor, the procedure should be aligned with [SF103 - Handle safety
+and security
+incident](http://aris.statoil.no/?objectguid=f9469e01-b2be-11e0-43e7-828060af7619)
+(Note: Bad URL, possible replacement [SF103 - Handle safety and security
+incident](https://aris.equinor.com/#default/item/c.L5CollaborationDiagram.Production.p4brEjE7EeoAEAANOmTg1g.-1/~AbBbIm1vZGVsVmlld2VyUmVwb3J0cyJd).*
 
 ## Disaster recovery
 
 ### Disaster recovery Plan
 
+*Description of the disaster recovery procedures. There is no requirement for a
+system-specific plan if the system is part of a larger DR plan for the
+datacenter, and this is considered sufficient.*
+
 Refer to procedures for OMNIA (link to be included).
 
 ### Business continuity
 
+*Description of the business continuity plans.*
+
 Refer to plan for OMNIA (link to be included).
 
 ## Service level agreements
+
+*Reference to SLAs relevant to the system.*
 
 No service level agreement (SLA) is established for this system. Refer to SLA for OMNIA (link to be included).
 
@@ -320,16 +356,21 @@ For common Data Engineering practices, see [this wiki page](https://wiki.equinor
 
 ### Team Specific Practices
 
-*[Enter team specific working practices]*
+*Link to team specific working practices (if hosting multiple runboks) or enter team
+specific working practices directly*
 
 ### Agile method
 
-*[Enter agile methodoligy and practices e.g.:]*
+*Link to team guidelines (if hosting multiple runboks) or enter agile methodoligy and practices e.g.:*
 
-*[Omniators works in 2-week iterations, with daily stand-ups every working day. Demo meetings are held after each iteration, with stakeholders and team members. Retrospective and review sessions are team internal. Backlog grooming includes team members and PO. All User Stories are estimated by team members. Tasks are organized and managed in Azure DevOps.]*
+*The team uses Scrum and works in 2-week iterations, with daily stand-ups every working day. Demo meetings are held after each iteration, with stakeholders and team members. Retrospective and review sessions are team internal. Backlog refinement includes team members and PO. All User Stories are estimated by team members. Tasks are organized and managed in [Azure DevOps|Git|Jira|Planner](http://).*
 
 ## Regulatory compliance
 
+*Description of how the system complies with regulatory requirements. Please
+verify whether the system in question is subject to the requirements before
+filling out the sections below.*
+
 ### Sarbanes-Oxley Act (SOX)
 
-Not applicable.
+*The remainder of this section only if applicable, otherwise enter "Not applicable" and remove.*
