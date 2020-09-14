@@ -96,9 +96,16 @@ The document and the information it contains shall be handled according to Equin
 
 ### Architecture overview
 
-The main components in the system architecture are described in the table below. All components are OMNIA resources, with the exception of the *[summary of the exception(s)]*:
+*The overall system architecture and description. If available, provide a link
+to the relevant system landscape diagram in
+[Equinor EA](http://eita.statoil.no/companyea/?oid=b1b18bd9-9cca-45a7-9289-9eacf4c7f462/).*
 
-*[paste system diagram here]*
+*[paste system diagram here (example below)]*
+
+![Data Pipeline Architecture](./architecture-data-pipelines.drawio.svg)
+*(edit this diagram on the draw.io site, or using the VS Code draw.io integration plugin)*
+
+The main components in the system architecture are described in the table below. All components are OMNIA resources, with the exception of the *[summary of the exception(s)]*:
 
 #### *[Component Type]*
 
