@@ -100,12 +100,10 @@ The document and the information it contains shall be handled according to Equin
 to the relevant system landscape diagram in
 [Equinor EA](http://eita.statoil.no/companyea/?oid=b1b18bd9-9cca-45a7-9289-9eacf4c7f462/).*
 
-*[paste system diagram here (example below)]*
-
 ![Data Pipeline Architecture](./architecture-data-pipelines.drawio.svg)
 *(edit this diagram on the draw.io site, or using the VS Code draw.io integration plugin)*
 
-The main components in the system architecture are described in the table below. All components are OMNIA resources, with the exception of the *[summary of the exception(s)]*:
+The main components in the system architecture are described in the table below. See also [Interfaces and dependencies](#interfaces-and-dependencies). All components are OMNIA resources, with the exception of the *[summary of the exception(s)]*:
 
 #### *[Component Type]*
 
@@ -123,11 +121,23 @@ The main components in the system architecture are described in the table below.
 
 ### Hardware
 
-This data flow uses shared hardware components only.
+*Hardware architecture and inventory for the system, including virtual
+servers/appliances. Should also include an overview of which components are
+critical for the system operation. Detailed information on hardware can
+typically be found in [DRM](https://drm.statoil.com) and
+[Services@Equinor](https://statoil.service-now.com/).*
+
+*e.g. This data flow uses shared hardware components only.*
 
 See also [Interfaces and dependencies](#interfaces-and-dependencies) for an overview of shared hardware components used.
 
 ### Software
+
+*Software architecture and inventory for the system. Should also include an
+overview of which components are critical for the system operation. Detailed
+information on software can typically be found in
+[DRM](https://drm.statoil.com) and
+[Services@Equinor](https://statoil.service-now.com/).*
 
 #### *[Component Type]*
 
@@ -144,6 +154,7 @@ See also [Interfaces and dependencies](#interfaces-and-dependencies) for an over
 - Resource Group - *[Name]*
 - Usage - *[Dev|Test|Prod]*
 - Criticality - *[Low|Medium|High]*
+
 See also [Interfaces and dependencies](#interfaces-and-dependencies) for an overview of shared software components used.
 
 ### Data
