@@ -47,7 +47,7 @@ Done by a peer developer before deployment to test environment
 - [ ] Runbook created
 - [ ] All config described and as either override parameters in CI/CD or defined in Runbooks
 - [ ] External dependencies documented in runbook
-- [ ] readme.md on GitHub, including installation instructions
+- [ ] readme.md on GitHub
 - [ ] System diagram updated to reflect solution
 - [ ] All components included in deployment scripts
 - [ ] Any deployment work outside DevOps pipelines is documented

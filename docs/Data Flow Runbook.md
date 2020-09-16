@@ -14,9 +14,12 @@
     - [Information](#information)
     - [Interfaces and dependencies](#interfaces-and-dependencies)
     - [Test and quality assurance](#test-and-quality-assurance)
-  - [Configuration](#configuration)
+  - [Setup and Configuration](#setup-and-configuration)
+    - [Installation](#installation)
     - [System configuration](#system-configuration)
     - [Security Configuration](#security-configuration)
+    - [Cleanup](#cleanup)
+  - [CI and CD](#ci-and-cd)
   - [Operations](#operations)
     - [Change Management](#change-management)
     - [Access Management](#access-management)
@@ -85,6 +88,7 @@ To assist in filling out the runbook correctly, the following applies:
 - New subchapters can be added as required. When doing so, the table of contents must be updated.
 - Linking to Standard Operating Procedures (SOPs), KB articles and information stored in other systems is encouraged to avoid duplication of content across documents / multiple runbooks.  
 - No sensative or confidential information shall be entered in the runbook itself (although referenced SOPs, with appropriate access control, can contain this type of information). This limitation applies to passwords etc. that should be held in a secured key vault.
+- Don't duplicate documentation - refer existing sources where possible.
 
 ### Legal
 
@@ -103,21 +107,20 @@ to the relevant system landscape diagram in
 ![Data Pipeline Architecture](./architecture-data-pipelines.drawio.svg)
 *(edit this diagram on the draw.io site, or using the VS Code draw.io integration plugin)*
 
-The main components in the system architecture are described in the table below. See also [Interfaces and dependencies](#interfaces-and-dependencies). All components are OMNIA resources, with the exception of the *[summary of the exception(s)]*:
+The main components in the system architecture are described below. All components are OMNIA resources, with the exception of the *[summary of the exception(s)]*.
 
-#### *[Component Type]*
+See also [Interfaces and dependencies](#interfaces-and-dependencies).
+
+*NOTE: Feel free to use the display format that is best suited (tables, headings, etc..)*
+
+#### *[Architecture Component Type n]*
 
 ##### *[Feature]*
 
 - *[Name]* - *[Usage]*
 - *[Name]* - *[Usage]*
 
-#### *[Component Type 2]*
-
-##### *[*Feature*]*
-
-- *[Name]* - *[Usage]*
-- *[Name]* - *[Usage]*
+...
 
 ### Hardware
 
@@ -127,7 +130,7 @@ critical for the system operation. Detailed information on hardware can
 typically be found in [DRM](https://drm.statoil.com) and
 [Services@Equinor](https://statoil.service-now.com/).*
 
-*e.g. This data flow uses shared hardware components only.*
+*e.g. This data flow [uses shared hardware components only | doesn't use any hardware components].*
 
 See also [Interfaces and dependencies](#interfaces-and-dependencies) for an overview of shared hardware components used.
 
@@ -139,43 +142,35 @@ information on software can typically be found in
 [DRM](https://drm.statoil.com) and
 [Services@Equinor](https://statoil.service-now.com/).*
 
-#### *[Component Type]*
-
-- Name - *[Name]*
-- Subscription - *[Name]*
-- Resource Group - *[Name]*
-- Usage - *[Dev|Test|Prod]*
-- Criticality - *[Low|Medium|High]*
-
-#### *[Component Type 2]*
-
-- Name - *[Name]*
-- Subscription - *[Name]*
-- Resource Group - *[Name]*
-- Usage - *[Dev|Test|Prod]*
-- Criticality - *[Low|Medium|High]*
+*e.g. This data flow uses SaaS / PaaS services only so no additional software is used.*
 
 See also [Interfaces and dependencies](#interfaces-and-dependencies) for an overview of shared software components used.
 
+*NOTE: Feel free to use the display format that is best suited (tables, headings, etc..)*
+
+#### *[Software Component Type n]*
+
+- Name - *[Name]*
+- Subscription - *[Name]*
+- Resource Group - *[Name]*
+- Usage - *[Dev|Test|Prod]*
+- Criticality - *[Low|Medium|High]*
+
+...
+
 ### Data
 
-#### *[Name - (Classification[Open|Internal|Restricted|Confidential]) ]*
-
-*[Description]*  
-Location: *[Cloud| On-prem]*  
-Data Catalog: *[Data Catalog Link]*
-
-#### *[Name - (Classification[Open|Internal|Restricted|Confidential]) ]*
-
-*[Description]*  
-Location: *[Cloud| On-prem]*  
-Data Catalog: *[Data Catalog Link]*
+| Name   | Description | Location        | Classification                             | Info                 |
+|--------|-------------|-----------------|--------------------------------------------|----------------------|
+| Name 1 | Description | [Cloud\|OnPrem] | [Open\|Internal\|Restricted\|Confidential] | [Data Catalog](link) |
 
 ### Interfaces and dependencies
 
 The data flow is dependent on the following components (all OMNIA resources, except the *[exception(s>]*:
 
-#### *[Component Type]*
+*NOTE: Feel free to use the display format that is best suited (tables, headings, etc..)*
+
+#### *[Component Type n]*
 
 - Name - *[Name]*
 - Subscription - *[Name]*
@@ -183,51 +178,100 @@ The data flow is dependent on the following components (all OMNIA resources, exc
 - Usage - *[Dev|Test|Prod]*
 - Criticality - *[Low|Medium|High]*
 
-#### *[Component Type 2]*
-
-- Name - *[Name]*
-- Subscription - *[Name]*
-- Resource Group - *[Name]*
-- Usage - *[Dev|Test|Prod]*
-- Criticality - *[Low|Medium|High]*
+...
 
 ### Test and quality assurance
 
 The test environment (see component descriptions in '[Software](#software)' and '[Interfaces and dependencies](#interfaces-and-dependencies)') is used for testing and quality assurance of the data flow. It is not used for testing data quality (integrity) after transfer. This is done in the development and production environments. The Data flow delivery checklist is used for quality assurance and control.
 
-## Configuration
+## Setup and Configuration
+
+*Description of how the system is and shall be setup and configured. Should include
+details on all configuration done throughout the lifecycle of the system, not
+just during initial installation. Prefer automated deployment and setup to click-ops.*
+
+### Installation
+
+#### Development
+
+*Include a description of needed or recommended development tools (or link)*
+
+```powershell
+.\scripts\setup-dev.ps1
+```
+
+#### Production
+
+```powershell
+.\scripts\setup-prod.ps1
+```
+
+#### Post Installation Steps
+
+*Additional post setup installation and configuration steps*
 
 ### System configuration
 
-#### Configuration, custom code and deployment scripts
+*Description of how the system is and shall be configured. Should include
+details on all configuration done throughout the lifecycle of the system, not
+just during initial installation.*
 
-Essential configuration data are included on the first page in this document. The files containing the detailed definition and configuration of the Azure components described in [Architecture Overview](#architecture-overview) are all stored in the *[Github Repository]* GitHub. This also includes deployment scripts and instructions.
+*[If relevant:] App properties/settings are provided in the table below.*
 
-[If relevant:] App properties/settings are provided in the table below.
+*NOTE: Feel free to use the display format that is best suited (tables, headings, etc..)*
 
-#### *[App Name]*
-
-- *[Property Name]* - *[Value / description]*
-- *[Property Name]* - *[Value / description]*
-
-#### *[App Name 2]*
+#### *[App Name n]*
 
 - *[Property Name]* - *[Value / description]*
 - *[Property Name]* - *[Value / description]*
+
+...
 
 \* Note: don't include passwords or other sensitive information here.
 
 ### Security Configuration
 
-#### *[Component Type]*
+*Description of how the system is configured in terms of security (system hardening). Should include details on all configuration done throughout the lifecycle of the system, not just during initial installation.
+Equinor’s information security governance, WR1211, contains topics relevant for this chapter. These include, but are not limited to:*
 
-- *[Name or 'See [Software](#software)']* - *[Access permissions description]*
-- *[Name or 'See [Software](#software)']* - *[Access permissions description]*
+- *Access control*
+- *Authentication*
+- *Authorization*
+- *Data segregation*
+- *Malware protection*
+- *Network security*
+- *Removal of unused services and accounts*
+- *Password policies*
+- *Security logging*  
 
-#### *[Component Type 2]*
+*NOTE: Feel free to use the display format that is best suited (tables, headings, etc..)*
 
-- *[Name or 'See [Software](#software)']* - *[Access permissions description]*
-- *[Name or 'See [Software](#software)']* - *[Access permissions description]*
+#### *[Component Type n]*
+
+- *[Property Name]* - *[Value / description]*
+- *[Property Name]* - *[Value / description]*
+
+...
+
+### Cleanup
+
+*How to clean up the system.*
+
+#### Development Cleanup
+
+```powershell
+.\scripts\delete-dev.ps1
+```
+
+#### Production Cleanup
+
+```powershell
+.\scripts\delete-prod.ps1
+```
+
+## CI and CD
+
+*A description of CI / CD*
 
 ## Operations
 

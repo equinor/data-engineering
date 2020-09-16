@@ -14,9 +14,12 @@
     - [Information](#information)
     - [Interfaces and dependencies](#interfaces-and-dependencies)
     - [Test and quality assurance](#test-and-quality-assurance)
-  - [Configuration](#configuration)
+  - [Setup and Configuration](#setup-and-configuration)
+    - [Installation](#installation)
     - [System configuration](#system-configuration)
     - [Security Configuration](#security-configuration)
+    - [Cleanup](#cleanup)
+  - [CI and CD](#ci-and-cd)
   - [Operations](#operations)
     - [Change Management](#change-management)
     - [Access Management](#access-management)
@@ -50,6 +53,10 @@ The document should be used to understand how the system is configured and funct
 *Detailed description of what the operational runbook covers. If there are any
 limitations on the system in scope, this must be specified here.*
 
+### Known Bugs & Limitations
+
+For a list of known bugs and limitations please see the issues associated with this git repository. Relevant issues should be labelled as *bug*, *enhancement* or *documentation*
+
 ## Authoring Guidelines
 
 To assist in filling out the runbook correctly, the following applies:
@@ -59,6 +66,7 @@ To assist in filling out the runbook correctly, the following applies:
 - New subchapters can be added as required. When doing so, the table of contents must be updated.
 - Linking to Standard Operating Procedures (SOPs), KB articles and information stored in other systems is encouraged to avoid duplication of content across documents / multiple runbooks.  
 - No sensative or confidential information shall be entered in the runbook itself (although referenced SOPs, with appropriate access control, can contain this type of information). This limitation applies to passwords etc. that should be held in a secured key vault.
+- Don't duplicate documentation - refer existing sources where possible.
 
 ## Legal
 
@@ -77,21 +85,18 @@ to the relevant system landscape diagram in
 ![Data Pipeline Architecture](./architecture-data-pipelines.drawio.svg)
 *(edit this diagram on the draw.io site, or using the VS Code draw.io integration plugin)*
 
-The main components in the system architecture are described in the table below. See also [Interfaces and dependencies](#interfaces-and-dependencies).
+The main components in the system architecture are described below.
 
-#### *[Component Type]*
+See also [Interfaces and dependencies](#interfaces-and-dependencies).
+
+#### *[Architecture Component Type n]*
 
 ##### *[Feature]*
 
 - *[Name]* - *[Usage]*
 - *[Name]* - *[Usage]*
 
-#### *[Component Type 2]*
-
-##### *[*Feature*]*
-
-- *[Name]* - *[Usage]*
-- *[Name]* - *[Usage]*
+...
 
 ### Hardware
 
@@ -100,6 +105,8 @@ servers/appliances. Should also include an overview of which components are
 critical for the system operation. Detailed information on hardware can
 typically be found in [DRM](https://drm.statoil.com) and
 [Services@Equinor](https://statoil.service-now.com/).*
+
+*e.g. This solution [uses shared hardware components only | doesn't use any hardware components].*
 
 See also [Interfaces and dependencies](#interfaces-and-dependencies) for an overview of shared hardware components used.
 
@@ -111,7 +118,21 @@ information on software can typically be found in
 [DRM](https://drm.statoil.com) and
 [Services@Equinor](https://statoil.service-now.com/).*
 
+*e.g. This solution uses SaaS / PaaS services only so no additional software is used.*
+
 See also [Interfaces and dependencies](#interfaces-and-dependencies) for an overview of shared software components used.
+
+*NOTE: Feel free to use the display format that is best suited (tables, headings, etc..)*
+
+#### *[Software Component Type n]*
+
+- Name - *[Name]*
+- Subscription - *[Name]*
+- Resource Group - *[Name]*
+- Usage - *[Dev|Test|Prod]*
+- Criticality - *[Low|Medium|High]*
+
+....
 
 ### Information
 
@@ -122,7 +143,9 @@ information is stored, as well as the information flows within the system.*
 
 *Interfaces and dependencies towards other systems, both internal and external, regardless of the dependency direction.*
 
-#### *[Component Type]*
+*NOTE: Feel free to use the display format that is best suited (tables, headings, etc..)*
+
+#### *[Component Type n]*
 
 - Name - *[Name]*
 - Subscription - *[Name]*
@@ -130,19 +153,29 @@ information is stored, as well as the information flows within the system.*
 - Usage - *[Dev|Test|Prod]*
 - Criticality - *[Low|Medium|High]*
 
-#### *[Component Type]*
-
-- Name - *[Name]*
-- Subscription - *[Name]*
-- Resource Group - *[Name]*
-- Usage - *[Dev|Test|Prod]*
-- Criticality - *[Low|Medium|High]*
+....
 
 ### Test and quality assurance
 
 *Description of the test and/or quality assurance environment.*
 
-## Configuration
+## Setup & Configuration
+
+*Description of how the system is and shall be setup and configured. Should include
+details on all configuration done throughout the lifecycle of the system, not
+just during initial installation.*
+
+### Installation
+
+#### Development
+
+*Include a description of needed or recommended development tools (or link)*
+
+#### Production
+
+#### Post Installation Steps
+
+*Additional post setup installation and configuration steps*
 
 ### System configuration
 
@@ -150,7 +183,16 @@ information is stored, as well as the information flows within the system.*
 details on all configuration done throughout the lifecycle of the system, not
 just during initial installation.*
 
-#### Configuration, custom code and deployment scripts
+*[If relevant:] App properties/settings are provided in the table below.*
+
+*NOTE: Feel free to use the display format that is best suited (tables, headings, etc..)*
+
+#### *[App Name n]*
+
+- *[Property Name]* - *[Value / description]*
+- *[Property Name]* - *[Value / description]*
+
+...
 
 ### Security Configuration
 
@@ -167,15 +209,22 @@ Equinor’s information security governance, WR1211, contains topics relevant fo
 - *Password policies*
 - *Security logging*  
 
-#### *[Component Type]*
+*NOTE: Feel free to use the display format that is best suited (tables, headings, etc..)*
 
-- *[Name or 'See [Software](#software)']* - *[Access permissions description]*
-- *[Name or 'See [Software](#software)']* - *[Access permissions description]*
+#### *[Component Type n]*
 
-#### *[Component Type]*
+- *[Property Name]* - *[Value / description]*
+- *[Property Name]* - *[Value / description]*
 
-- *[Name or 'See [Software](#software)']* - *[Access permissions description]*
-- *[Name or 'See [Software](#software)']* - *[Access permissions description]*
+...
+
+### Cleanup
+
+*How to clean up the system.*
+
+#### Development Cleanup
+
+#### Production Cleanup
 
 ## Operations
 
