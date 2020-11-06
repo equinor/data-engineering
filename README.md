@@ -7,7 +7,9 @@ For additional information and guidelines please see the [Equinor Data Engineeri
 ## Contents
 
 * .github/ - Custom templates for github issues and pull requests
+* architectures/ - Pre-approved architecture patterns
 * docs/ - Templates and other documentation e.g. runbook
+
 
 ## Contributing
 Contributions are greatly appreciated and encouraged.
