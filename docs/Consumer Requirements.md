@@ -29,7 +29,7 @@ All new data shares should adhere to the recommendations defined in the Enterpri
 
 *[Should any changes from the 'source' system be applied. See the point on lineage below as there may be multiple systems the data passes through]*
 
-**Will you consume the data in it's entirety, or only a subset?**
+**When reading data, will you consume it in it's entirety, or only a subset and do you need possibilities to filter or sort on specific fields?**
 
 *[e.g. particular fields, a particular time period, a particular asset]*
 
