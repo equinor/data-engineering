@@ -13,13 +13,13 @@
     - [Software](#software)
     - [Information](#information)
     - [Interfaces and dependencies](#interfaces-and-dependencies)
-    - [Test and quality assurance](#test-and-quality-assurance)
   - [Setup and Configuration](#setup-and-configuration)
     - [Installation](#installation)
     - [System configuration](#system-configuration)
     - [Security Configuration](#security-configuration)
     - [Cleanup](#cleanup)
   - [CI and CD](#ci-and-cd)
+  - [Test and quality assurance](#test-and-quality-assurance)
   - [Operations](#operations)
     - [Change Management](#change-management)
     - [Access Management](#access-management)
@@ -155,10 +155,6 @@ information is stored, as well as the information flows within the system.*
 
 ....
 
-### Test and quality assurance
-
-*Description of the test and/or quality assurance environment.*
-
 ## Setup & Configuration
 
 *Description of how the system is and shall be setup and configured. Should include
@@ -225,6 +221,14 @@ Equinor’s information security governance, WR1211, contains topics relevant fo
 #### Development Cleanup
 
 #### Production Cleanup
+
+## CI and CD
+
+*A description of CI / CD*
+
+## Test and quality assurance
+
+*Description of the test and/or quality assurance environment.*
 
 ## Operations
 

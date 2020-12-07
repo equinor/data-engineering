@@ -13,13 +13,13 @@
     - [Software](#software)
     - [Information](#information)
     - [Interfaces and dependencies](#interfaces-and-dependencies)
-    - [Test and quality assurance](#test-and-quality-assurance)
   - [Setup and Configuration](#setup-and-configuration)
     - [Installation](#installation)
     - [System configuration](#system-configuration)
     - [Security Configuration](#security-configuration)
     - [Cleanup](#cleanup)
   - [CI and CD](#ci-and-cd)
+  - [Test and quality assurance](#test-and-quality-assurance)
   - [Operations](#operations)
     - [Change Management](#change-management)
     - [Access Management](#access-management)
@@ -180,10 +180,6 @@ The data flow is dependent on the following components (all OMNIA resources, exc
 
 ...
 
-### Test and quality assurance
-
-The test environment (see component descriptions in '[Software](#software)' and '[Interfaces and dependencies](#interfaces-and-dependencies)') is used for testing and quality assurance of the data flow. It is not used for testing data quality (integrity) after transfer. This is done in the development and production environments. The Data flow delivery checklist is used for quality assurance and control.
-
 ## Setup and Configuration
 
 *Description of how the system is and shall be setup and configured. Should include
@@ -272,6 +268,20 @@ Equinor’s information security governance, WR1211, contains topics relevant fo
 ## CI and CD
 
 *A description of CI / CD*
+
+### Component 1
+
+#### Deployment
+
+#### Testing
+
+*Component specific testing etc.* For other types of testing see [Test and quality assurance](#test-and-quality-assurance) below.
+
+## Test and quality assurance
+
+The test environment (see component descriptions in '[Software](#software)' and '[Interfaces and dependencies](#interfaces-and-dependencies)') is used for testing and quality assurance of the data flow. It is not used for testing data quality (integrity) after transfer. This is done in the development and production environments. The Data flow delivery checklist is used for quality assurance and control.
+
+*Add info on Integration Testing, Acceptance Testing, Contract testing, End to end testing, Load testing, security testing, quality testing etc..*
 
 ## Operations
 
