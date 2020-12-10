@@ -4,7 +4,7 @@ This folder contains documentation and templates. Some of the documents are prov
 
 ## Contents
 
-* **word/** - Word versions of some of the templates
+* **word/** - Word versions of some of the templates (DEPRECATED)
   * **Data flow delivery checklist.docx** - A checklist to help verify the solution quality and robustness
   * **Data flow Runbook.docx** - Runbook containing solution requirements, documentation and operational information
   * **Equinor Runbook.docx** - Generic Equinor runbook template
@@ -13,9 +13,9 @@ This folder contains documentation and templates. Some of the documents are prov
   * **Standard Operating Procedure.docx - Solution Deployment (draft).docx** - SOP for deployment (possibly move to wiki as a standard guideline)
 * [Background Information & Decision Log.md](Background%20Information%20%26%20Decision%20Log.md) - For capturing background information and decisions.
 * [Consumer Requirements.md](Consumer%20Requirements.md) - For collecting reqiurements from a consumer of a data share
-* [Data Flow Delivery Checklist.md](Data%20Flow%20Delivery%20Checklist.md) - Checklist for data flows (consider also [pull request templates](https://github.com/equinor/data-engineering/tree/master/.github))
-* [Data Flow Runbook.md](Data%20Flow%20Runbook.md) - Runbook containing solution requirements, documentation and operational information
-* [Equinor Runbook.md](Equinor%20Flow%20Runbook.md) - Generic Equinor runbook template
+* [Data Product Delivery Checklist.md](Data%20Product%20Delivery%20Checklist.md) - Checklist for data products (consider also [pull request templates](https://github.com/equinor/data-engineering/tree/master/.github))
+* [Data Product Runbook.md](Data%20Product%20Runbook.md) - Runbook for data products containing solution requirements, documentation and operational information
+* [Equinor Runbook.md](Equinor%20Runbook.md) - Generic Equinor runbook template
 * [Standard Operating Procedure.md](Standard%20Operating%20Procedure.md) -Template for Standard Operating procedures
 
 ## Examples
