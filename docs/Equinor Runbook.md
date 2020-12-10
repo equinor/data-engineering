@@ -226,9 +226,55 @@ Equinor’s information security governance, WR1211, contains topics relevant fo
 
 *A description of CI / CD*
 
+### Component 1
+
+#### Deployment
+
+#### Testing
+
+*Component specific testing etc. e.g. unit tests* For other types of testing see [Test and quality assurance](#test-and-quality-assurance) below.
+
 ## Test and quality assurance
 
-*Description of the test and/or quality assurance environment.*
+The test environment (see component descriptions in '[Software](#software)' and '[Interfaces and dependencies](#interfaces-and-dependencies)') is used for testing and quality assurance of the data flow. It is not used for testing data quality (integrity) after transfer. This is done in the development and production environments. The Data flow delivery checklist is used for quality assurance and control.
+
+### Unit Testing
+
+See [Components](#component-1) above for unit testing.
+
+*The assumption is that unit test should be possible to trigger manually, or run automatically as part of the CI pipeline.*
+
+### Integration Testing
+
+*Information about how to perform integration tests that check small sections of your product and it’s interaction with external tools or systems. Whilst unit testing might cover the bulk of testing of logic, there will typically be a smaller number of technical integration tests to check that errors are handled and a few positive and negative outcomes work as expected. These tests should be possible to trigger manually but can also be run automatically as part of the CI pipeline.*
+
+### Acceptance tests
+
+*Information about performing Acceptance tests. Acceptance tests may in many ways be similar to integration tests, but are from a user / business perspective.*
+
+### Contract testing
+
+*Information about contract to verify the contract of endpoints and data: the URLs, HTTP statuses expected, expected columns /  properties and which are required, optional, nullable, which could be strings or binary data, some validation rules, etc…
+
+### End to end testing
+
+*Information about testing within a larger end to end context*
+
+### Load testing
+
+*Information about load testing, performance testing, stress testing etc.*
+
+### Security testing
+
+*Information about security testing*
+
+### Quality testing
+
+*Information about quality testing*
+
+### Other
+
+*Other testing information*
 
 ## Operations
 
