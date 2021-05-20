@@ -12,7 +12,7 @@ This folder contains documentation and templates. Some of the documents are prov
   * **Standard Operating Procedure.docx** - Template for Standard Operating procedures
   * **Standard Operating Procedure.docx - Solution Deployment (draft).docx** - SOP for deployment (possibly move to wiki as a standard guideline)
 * [Background Information & Decision Log.md](Background%20Information%20%26%20Decision%20Log.md) - For capturing background information and decisions.
-* [Consumer Requirements.md](Consumer%20Requirements.md) - For collecting reqiurements from a consumer of a data share
+* [Consumer Requirements.md](Consumer%20Requirements.md) - For collecting reqiurements from a consumer of a data product
 * [Data Product Delivery Checklist.md](Data%20Product%20Delivery%20Checklist.md) - Checklist for data products (consider also [pull request templates](https://github.com/equinor/data-engineering/tree/master/.github))
 * [Data Product Runbook.md](Data%20Product%20Runbook.md) - Runbook for data products containing solution requirements, documentation and operational information
 * [Equinor Runbook.md](Equinor%20Runbook.md) - Generic Equinor runbook template

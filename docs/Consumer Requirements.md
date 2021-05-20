@@ -1,14 +1,14 @@
 # Consumer Requirements
-This document contains requirements for the data share from the consumer perspective for {ENTER_ CONSUMER_HERE}. It does not touch on other important related requirements such as handling of data consumed from such services.
+This document contains requirements for the [data product](https://statoilsrm.sharepoint.com/sites/EDM/SitePages/Data-products.aspx) from the consumer perspective for {ENTER_ CONSUMER_HERE}. It does not touch on other important related requirements such as handling of data consumed from such products.
 
-All new data shares should adhere to the recommendations defined in the Enterprise Data Architecture and other governing documentation. What is entered here might differ from what is actually provided and so it is important to understand such changes and their possible impact.
+All new data products should adhere to the recommendations defined in the Enterprise Data Architecture and other governing documentation. What is entered here might differ from what is actually provided and so it is important to understand such changes and their possible impact.
 
 *Note: There should be a seperate document for each consumer. Feel free to suplement the points in this document with additional information as suitable*
 
 
 ## General
 
-**What type of data object are you interested in?**
+**What type of data objects are you interested in?**
 
 *[Please be as specific as possible. If you have any information about what this data can be retrieved from please include details]*
 
@@ -23,9 +23,9 @@ All new data shares should adhere to the recommendations defined in the Enterpri
 
 **What queries and operations are you expecting to be able to perform?**
 
-*[e.g. Create, Read, Update, Delete, GetXxx]*
+*[e.g. Create, Read, Update, Delete, Get Xxx, Get by Xxx]*
 
-**What expectations do you have in relation to data quality, including but not limited to the contents, missing data, validation and transformation**
+**What expectations do you have in relation to data quality, including but not limited to the freshness, contents, missing data, validation and transformation**
 
 *[Should any changes from the 'source' system be applied. See the point on lineage below as there may be multiple systems the data passes through]*
 
@@ -36,9 +36,9 @@ All new data shares should adhere to the recommendations defined in the Enterpri
 **Will you be aggregating the data, and if so at what level of granularity?**
 
 
-**For data that can be modified, do you need access to older versions of the data?**
+**For data that can be modified, do you need access to previous versions of the data?**
 
-*[Do you need access to older versions of data objects to see possible changes, or is it sufficient to just see the latest entry]*
+*[Do you need access to previous versions of data objects to see possible changes, or is it sufficient to just see the latest entry]*
 
 ## Communication
 
@@ -54,7 +54,7 @@ The application will cache the data and wont necessarylity affect our service
 
 *[Specify relative to the full lineage of the data, including any delay caused by manual steps]*
 
-**How do you hope to access the data (note API first guidelines)**?
+**Do you have expectations on how to access the data (note API first guidelines)**?
 
 *[e.g. API, DB query, File, Queue, ...]*
 
@@ -68,13 +68,13 @@ The application will cache the data and wont necessarylity affect our service
 
 *[e.g. on specific errors, non-triggered events, end-to-end, ... ]*
 
-**Do you have requirements outside the specified data share deprecation policy**
+**Do you have requirements outside the specified data product deprecation policy**
 
-*[All data shares / API's should have a deprecation policy that mandates how quickly deprecated versions will be removed]*
+*[All data products / API's should have a deprecation policy that mandates how quickly deprecated versions will be removed]*
 
 ## Other
 
-Whilst not specifically requirements for the data share, you should also consider how it will fit as a part of your wider system. Amongst other points, you might consider:
+Whilst not specifically requirements for the data product, you should also consider how it will fit as a part of your wider system. Amongst other points, you might consider:
 
 **The lineage of the data and how this might impact usage?**
 

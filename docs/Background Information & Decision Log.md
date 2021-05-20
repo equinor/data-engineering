@@ -13,7 +13,7 @@ This document is split into 2 sections:
 
 ## Background Information
 
-Relevant facts and information upon which to base decisions that impact the design of the data flow. All solutions need to consider 3 perspectives - the consumer, the enterprise and relevant backend systems. All new data flows should also adhere to recommendations defined in the Enterprise Data Architecture and other governing documentation.
+Relevant facts and information upon which to base decisions that impact the design of the [data product](https://statoilsrm.sharepoint.com/sites/EDM/SitePages/Data-products.aspx). All solutions need to consider 3 perspectives - the consumer, the enterprise and technical. All new data products should also adhere to recommendations defined in the Enterprise Data Architecture and other governing documentation.
 
 *[Please include any relevant reasoning or assumptions behind answers.]*
 
@@ -39,6 +39,10 @@ Relevant facts and information upon which to base decisions that impact the desi
 
 Level 1: Project\
 Level 2: Project Schedule
+
+**Who shuld be the data produce owner?**
+
+*[See information about [data product owners](https://statoilsrm.sharepoint.com/:p:/r/sites/datafundamentals/Shared%20Documents/01_EDM%20Portal/Data%20product%20open%20material/Data%20product%20owner%20elaborated.pptx?d=w5cde725e32864b009fa0ff2f1aea6260&csf=1&web=1&e=pMQE92)]*
 
 **Describe the existing lineage of data?**
 
@@ -112,7 +116,7 @@ e.g. API, DB view, File, Queue, ...
 
 **What partitioning requirements should be implemented for the data?**
 
-**What high level architecture(s) pattern will the data flow follow?** 
+**What high level architecture(s) pattern will the data product follow?** 
 
 e.g. copy, virtualisation, streaming, ...
 
@@ -130,7 +134,7 @@ e.g. copy, virtualisation, streaming, ...
 
 ### Lifecycle
 
-**Who owns the data flow?**
+**Who owns the data product?**
 
 **What operational SLA is being offered?**
 
@@ -140,4 +144,4 @@ e.g. copy, virtualisation, streaming, ...
 
 e.g. on specific errors, non-triggered events, end-to-end, ... 
 
-**What is the deprecation policy for the data flow**
+**What is the deprecation policy for the data product**
