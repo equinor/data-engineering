@@ -66,11 +66,12 @@ To assist in filling out the runbook correctly, the following applies:
 - New subchapters can be added as required. When doing so, the table of contents must be updated.
 - Linking to Standard Operating Procedures (SOPs), KB articles and information stored in other systems is encouraged to avoid duplication of content across documents / multiple runbooks.  
 - No sensative or confidential information shall be entered in the runbook itself (although referenced SOPs, with appropriate access control, can contain this type of information). This limitation applies to passwords etc. that should be held in a secured key vault.
+- Use you own judgement on how to secure access to this runbook based upon the sensitivity of the contents. This includes whether to include in public repositories.
 - Don't duplicate documentation - refer existing sources where possible.
 
 ## Legal
 
-This document contains information that is proprietary to Equinor ASA. Neither the document nor the information contained therein should be disclosed or reproduced in whole or in part, without express written consent of Equinor ASA.  
+This document may contain information that is proprietary to Equinor ASA. Neither the document nor the information contained therein should be disclosed or reproduced in whole or in part, without express written consent of Equinor ASA.  
 
 The document and the information it contains shall be handled according to Equinor’s information classification scheme.
 
